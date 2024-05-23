@@ -72,16 +72,16 @@ const SettingsModal: React.FC<SettingsModalProps> = ({ isOpen, onClose, currentU
                 dark:text-gray-200
               "
             >
-              Profile
+              Личный кабинет
             </h2>
             <p className="mt-1 text-sm leading-6 text-gray-600 dark:text-gray-300">
-              Edit your profile information.
+              Тут вы можете изменить информацию.
             </p>
 
             <div className="mt-10 flex flex-col gap-y-8">
               <Input
                 disabled={isLoading}
-                label="Name"
+                label="Имя"
                 id="name"
                 errors={errors}
                 required
@@ -99,7 +99,7 @@ const SettingsModal: React.FC<SettingsModalProps> = ({ isOpen, onClose, currentU
                     dark:text-gray-200
                   "
                 >
-                  Photo
+                  Фото
                 </label>
                 <div className="mt-2 flex items-center gap-x-3">
                   <Image
@@ -115,7 +115,7 @@ const SettingsModal: React.FC<SettingsModalProps> = ({ isOpen, onClose, currentU
                     uploadPreset={process.env.NEXT_PUBLIC_CLOUDINARY_PRESET_NAME}
                   >
                     <Button disabled={isLoading} secondary type="button">
-                      Change
+                      Изменить
                     </Button>
                   </CldUploadButton>
                 </div>
@@ -134,10 +134,10 @@ const SettingsModal: React.FC<SettingsModalProps> = ({ isOpen, onClose, currentU
           "
         >
           <Button disabled={isLoading} secondary onClick={onClose}>
-            Cancel
+            Отмена
           </Button>
           <Button disabled={isLoading} type="submit">
-            Save
+            Сохранить
           </Button>
         </div>
       </form>

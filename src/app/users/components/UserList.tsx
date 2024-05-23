@@ -52,12 +52,12 @@ const UserList: React.FC<UserListProps> = ({ items }) => {
               dark:text-gray-200
             "
           >
-            People
+            Пользователи
           </div>
         </div>
         <SearchInput
           id="search"
-          placeholder="search by name, email ..."
+          placeholder="поиск по имени, почте..."
           setSearchBy={setSearchBy}
         />
         {items.filter(filterBySearch).map((item) => (

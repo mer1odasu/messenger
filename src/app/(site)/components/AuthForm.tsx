@@ -109,7 +109,7 @@ const AuthForm = () => {
                 errors={errors}
                 required
                 id="name"
-                label="Name"
+                label="Имя"
               />
             )}
             <Input
@@ -118,7 +118,7 @@ const AuthForm = () => {
               errors={errors}
               required
               id="email"
-              label="Email address"
+              label="Почта"
               type="email"
             />
             <Input
@@ -127,12 +127,12 @@ const AuthForm = () => {
               errors={errors}
               required
               id="password"
-              label="Password"
+              label="Пароль"
               type="password"
             />
             <div>
               <Button disabled={isLoading} fullWidth type="submit">
-                {variant === "LOGIN" ? "Sign in" : "Register"}
+                {variant === "LOGIN" ? "Войти" : "Зарегистрироваться"}
               </Button>
             </div>
           </form>
@@ -150,7 +150,7 @@ const AuthForm = () => {
               </div>
               <div className="relative flex justify-center text-sm">
                 <span className="bg-white px-2 text-gray-500 dark:bg-dusk dark:text-gray-200">
-                  Or continue with
+                  Войти с помощью
                 </span>
               </div>
             </div>
@@ -172,9 +172,9 @@ const AuthForm = () => {
             dark:text-gray-400
           "
           >
-            <div>{variant === "LOGIN" ? "New to Messenger?" : "Already have an account?"}</div>
+            <div>{variant === "LOGIN" ? "Впервые у нас?" : "У вас уже есть аккаунт?"}</div>
             <div onClick={toggleVariant} className="cursor-pointer underline">
-              {variant === "LOGIN" ? "Create an account" : "Login"}
+              {variant === "LOGIN" ? "Зарегистрироваться" : "Войти"}
             </div>
           </div>
         </div>

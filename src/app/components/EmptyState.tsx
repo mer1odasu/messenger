@@ -17,7 +17,7 @@ const EmptyState = () => {
     >
       <div className="text-center items-center flex flex-col">
         <h3 className="mt-2 text-2xl font-semibold text-gray-900 dark:text-gray-200">
-          Select a chat or start a new conversation
+          Выберите чат или начните новый 
         </h3>
       </div>
     </div>

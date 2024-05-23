@@ -68,15 +68,15 @@ const GroupChatModal: React.FC<GroupChatModalProps> = ({ isOpen, onClose, users 
                 dark:text-gray-200
               "
             >
-              Create a group chat
+              Создать чат
             </h2>
             <p className="mt-1 text-sm leading-6 text-gray-600 dark:text-gray-300">
-              Create a chat with more than 2 people.
+             Создайте чат с участием более 2 человек.
             </p>
             <div className="mt-10 flex flex-col gap-y-8">
               <Input
                 disabled={isLoading}
-                label="Group Name"
+                label="Название"
                 id="name"
                 errors={errors}
                 required
@@ -84,7 +84,7 @@ const GroupChatModal: React.FC<GroupChatModalProps> = ({ isOpen, onClose, users 
               />
               <Select
                 disabled={isLoading}
-                label="Members"
+                label="Участники"
                 options={users.map((user) => ({
                   value: user.id,
                   label: user.name,
@@ -101,10 +101,10 @@ const GroupChatModal: React.FC<GroupChatModalProps> = ({ isOpen, onClose, users 
         </div>
         <div className="mt-6 flex items-center justify-end gap-x-6">
           <Button disabled={isLoading} onClick={onClose} type="button" secondary>
-            Cancel
+            Отмена
           </Button>
           <Button disabled={isLoading} type="submit">
-            Create
+            Создать
           </Button>
         </div>
       </form>

@@ -70,21 +70,21 @@ const ConfirmModal: React.FC<ConfirmModalProps> = ({ isOpen, onClose }) => {
             as="h3"
             className="text-base font-semibold leading-6 text-gray-900 dark:text-gray-200"
           >
-            Delete conversation
+            Удалить чат
           </Dialog.Title>
           <div className="mt-2">
             <p className="text-sm text-gray-500 dark:text-gray-400">
-              Are you sure you want to delete this conversation? This action cannot be undone.
+              Вы уверены, что хотите удалить этот чат? Это действие невозможно отменить.
             </p>
           </div>
         </div>
       </div>
       <div className="mt-5 sm:mt-4 sm:flex sm:flex-row-reverse">
         <Button disabled={isLoading} danger onClick={onDelete}>
-          Delete
+          Удалить
         </Button>
         <Button disabled={isLoading} secondary onClick={onClose}>
-          Cancel
+          Отмена
         </Button>
       </div>
     </Modal>
